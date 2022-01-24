@@ -1,0 +1,480 @@
+/*body{*/
+/*    margin: 0;*/
+/*    background-image:url("../images/honeycomb.png");*/
+/*}*/
+
+/*.navbar {*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*    z-index: 10;*/
+/*    margin-top:2vh;*/
+/*    overflow: hidden;*/
+/*    width: 100%;*/
+/*    height:28vh;*/
+/*}*/
+
+/*.logo{*/
+/*    height:20vh;*/
+/*}*/
+
+/*.link-container{*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.navbar a {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    !*color: white;*!*/
+/*    color:white;*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*    padding: 1.5vh 1.5vw;*/
+/*    text-decoration: none;*/
+/*    font-size: 3.2vh;*/
+/*}*/
+
+/*.navbar a.active {*/
+/*    background-color: lightskyblue;*/
+/*    color: white;*/
+/*}*/
+
+/*.main-image{*/
+/*    width:100%;*/
+/*    vertical-align: bottom;*/
+/*    display: block;*/
+/*    filter:brightness(60%);*/
+/*}*/
+
+/*!* The dropdown container *!*/
+/*.dropdown {*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*!* Dropdown button *!*/
+/*.dropdown .dropbtn {*/
+/*    font-size: 3.2vh;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    color: white;*/
+/*    padding: 14px 16px;*/
+/*    background-color: inherit;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    margin: 0; !* Important for vertical align on mobile phones *!*/
+/*}*/
+
+/*.navbar a:hover, .dropdown:hover .dropbtn {*/
+/*    background-color: white;*/
+/*    color:black;*/
+/*}*/
+
+/*!* Dropdown content (hidden by default) *!*/
+/*.dropdown-content {*/
+/*    display: none;*/
+/*    position:absolute;*/
+/*    background-color: white;*/
+/*    min-width: 160px;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*    z-index: 1;*/
+/*}*/
+
+/*!* Links inside the dropdown *!*/
+/*.dropdown-content a {*/
+/*    font-size: 2.7vh;*/
+/*    float: none;*/
+/*    color: black;*/
+/*    padding: 12px 16px;*/
+/*    text-decoration: none;*/
+/*    display: block;*/
+/*    text-align: left;*/
+/*}*/
+
+/*!* Add a grey background color to dropdown links on hover *!*/
+/*.dropdown-content a:hover {*/
+/*    background-color: #ddd;*/
+/*}*/
+
+/*!* Show the dropdown menu on hover *!*/
+/*.dropdown:hover .dropdown-content {*/
+/*    display:block;*/
+/*}*/
+
+/*.navimage{*/
+/*    height:100%;*/
+/*}*/
+
+body{
+    margin: 0;
+    padding:0;
+    background-image:url("../images/honeycomb.png");
+}
+
+.navbar{
+    position: absolute;
+    top:0;
+    margin-top:2vh;
+    overflow: hidden;
+    width: 100%;
+    height:28vw;
+    z-index: 2;
+}
+
+.logo{
+    height:11vw;
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-container a:not(.logo-link) {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    padding: 1.5vh 1.5vw;
+    text-decoration: none;
+    font-size: 1.75vw;
+}
+
+.icon{
+    display:none;
+    position:absolute;
+    height:5vh;
+    width:5vh;
+    left:2vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size:3.7vh;
+    text-align: center;
+}
+
+.link-container a:hover:not(.logo-link) {
+    background-color: white;
+    color: black;
+}
+
+.link-container a.active {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.main-image{
+    width:100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    display: block;
+    opacity: 0.6;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 1.75vw;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.5vw 1.5vw;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.link-container a:hover:not(.logo-link), .dropdown:hover .dropbtn {
+    background-color: white;
+    color:black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f9f9f9;
+    width:13vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 1.6vw!important;
+    float: none!important;
+    color: black!important;
+    padding: 1vw 1.1vw!important;
+    text-decoration: none!important;
+    display: block!important;
+    text-align: left!important;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd!important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.navimage{
+    height:100%;
+}
+
+.menu-overlay {
+    position: relative;
+    text-align: center;
+}
+
+.menu-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:60%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:5vh;
+}
+
+.navbar-2 {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 4;
+    height:10.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Links inside the navbar */
+.navbar-2 a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.2vh;
+}
+
+/* Change background on mouse-over */
+.navbar-2 a:hover {
+    background: white;
+    color: black;
+}
+
+.logo-2{
+    height:9vh;
+}
+
+.active-2 {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hide{
+    display:none;
+}
+
+.row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    padding: 0 2vw;
+    justify-content: center;
+    margin-top:3vh;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.margin{
+    margin-left:3vw;
+}
+
+.column img {
+    margin-top: 1vh;
+    vertical-align: middle;
+    width: 29vw;
+    height:17vw;
+    margin-bottom:0.9vh;
+    object-fit: cover;
+}
+
+/*!* Responsive layout - makes a two column-layout instead of four columns *!*/
+/*@media screen and (max-width: 800px) {*/
+/*    .column {*/
+/*        flex: 50%;*/
+/*        max-width: 50%;*/
+/*    }*/
+/*}*/
+
+/*!* Responsive layout - makes the two columns stack on top of each other instead of next to each other *!*/
+/*@media screen and (max-width: 600px) {*/
+/*    .column {*/
+/*        flex: 100%;*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+text{
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+.name{
+    font-size:1.7vw;
+}
+
+.desc{
+    font-size: 1.15vw;
+    margin-bottom:1.5vh;
+}
+
+/*.menu-overlay {*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.menu-text {*/
+/*    color:white;*/
+/*    position: absolute;*/
+/*    top: 45%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    text-align: center;*/
+/*    width:60%;*/
+/*    font-family: 'Titillium Web', sans-serif;*/
+/*    font-size:5vh;*/
+/*}*/
+
+
+.title{
+    position:absolute;
+    color:white;
+    font-size: 10vh;
+    top: 27vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+    font-family: 'Titillium Web', sans-serif;
+    z-index:1;
+}
+
+.black-back{
+    background-color: black;
+}
+
+.overlay-wrapper-2 {
+    display:none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+}
+
+.overlay-bg-2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    opacity: 0.95;
+    z-index:1;
+}
+
+.mobile{
+    display:none;
+}
+.mobile-2{
+    display: none;
+}
+
+.mobile-3{
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .link-container a, .dropdown, .dropbtn {display: none;}
+    .navimage a.icon {
+        display: block;
+        z-index:3;
+    }
+    .logo{height: 16vw;}
+    .navbar-2{display:none;}
+    .mobile{
+        display:block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index:3;
+    }
+    .desktop{display:none;}
+    .desktop-2{display: none;}
+    .desktop-3{display: none;}
+    .mobile-2{display: block;}
+    .mobile-3{display: block;}
+    .navbar{margin-top:2vh; overflow: visible;}
+    .show{display:block;}
+    .main-image{height:50vh;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .fixed{
+        position: fixed;
+        margin-top:17vh;
+        width:100vw;
+        z-index: 3;
+    }
+
+    .fixed-2{
+        position:fixed;
+        background-color:black;
+    }
+
+    .link-container.responsive {
+        position: relative;
+        display:block;
+        margin-top:5vh;
+        z-index:3;
+    }
+
+    .link-container.responsive a {
+        font-size:24px;
+        float: none;
+        display: block;
+        text-align: center;
+        z-index:3;
+        margin-right:20%;
+        margin-left:20%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .title{font-size: 8vh;top:28vh;}
+}
+
+@media screen and (max-width:800px){
+    .name{font-size: 1.7vh;}
+    .desc{font-size: 1.3vh;}
+    .column img{width:29vw; height:25vw;}
+}

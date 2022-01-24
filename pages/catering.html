@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabby's Sweet Treats | Catering</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png"/>
+    <link href="../stylesheets/catering.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/catering.js"></script>
+  </head>
+  <body>
+    <div class="navimage">
+      <div class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style=" vertical-align: middle;" aria-hidden="true"></i></a>
+        <a href="../index.html"><img class="logo mobile" src="../images/logo.png"></a>
+        <div class="fixed">
+          <div class="link-container" id="link-container">
+            <a href="../index.html">Home</a>
+            <a href="../pages/menu.html">Menu</a>
+            <a class="active" href="../pages/catering.html">Catering</a>
+            <a class="logo-link" href="../index.html"><img class="logo desktop" src="../images/logo.png"></a>
+            <a href="../pages/gallery.html">Gallery</a>
+            <div class="dropdown desktop-3">
+              <button class="dropbtn">About
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.2vw" height="1.2vw" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="../index.html#home-about">Who We Are</a>
+                <a href="../pages/schedule.html">Schedule</a>
+              </div>
+            </div>
+            <a class="mobile-3 on-click" href="../index.html#home-about">Who We Are</a>
+            <a class="mobile-3" href="../pages/schedule.html">Schedule</a>
+            <a href="../pages/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="black-back">
+        <text class="title" id="catering">Catering</text>
+        <img class="main-image" src="../images/catering.jpg">
+      </div>
+
+      <div class="overlay-wrapper" id="overlay-wrapper">
+        <div class="overlay-bg"></div>
+      </div>
+    </div>
+<!--    <div class="navimage">-->
+<!--      <div class="navbar">-->
+<!--        <div class="link-container">-->
+<!--          <a href="../index.html">Home</a>-->
+<!--          <a href="../pages/menu.html">Menu</a>-->
+<!--          <a class="active" href="">Catering</a>-->
+<!--          <img class="logo" src="../images/logo.png">-->
+<!--          <a href="../pages/gallery.html">Gallery</a>-->
+<!--          <div class="dropdown">-->
+<!--            <button class="dropbtn">About-->
+<!--              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">-->
+<!--                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--            <div class="dropdown-content">-->
+<!--              <a href="../index.html#home-about">Who We Are</a>-->
+<!--              <a href="../pages/schedule.html">Schedule</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <a href="../pages/contact.html">Contact</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="menu-overlay">-->
+<!--        <img class="main-image" src="../images/catering.jpg">-->
+<!--        <div class="menu-text">-->
+<!--          <h1 class="overlay-title">Catering</h1>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="navbar-2 hide">-->
+<!--      <img class="logo-2" src="../images/logo.png">-->
+<!--      <a href="../index.html">Home</a>-->
+<!--      <a class="active-2" href="#menu">Menu</a>-->
+<!--      <a href="#catering">Catering</a>-->
+<!--      <a href="#gallery">Gallery</a>-->
+<!--      <a href="../index.html#home-about">Who We Are</a>-->
+<!--      <a href="#schedule">Schedule</a>-->
+<!--      <a href="../pages/contact.html">Contact</a>-->
+<!--    </div>-->
+    <div class="parent">
+      <div class="services-flex">
+        <div class="services">
+          <text class="services-title">Our Catering Services</text></br></br>
+          <div class="flex-2">
+            <div class="list-1">
+              <ul class="first">
+                <li>Parties</li>
+                <li>Events</li>
+                <li>Birthday Parties</li>
+                <li>Festivals</li>
+                <li>Fundraisers</li>
+              </ul>
+            </div>
+            <div class="list-2">
+              <ul class="first">
+                <li>School Fairs</li>
+                <li>Block Parties</li>
+                <li>Camps</li>
+                <li>Trade Shows</li>
+                <li>Holiday Parties</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="services center-button">
+          <text class="services-title">How To Reserve Us</text></br></br>
+          <text class="body">Please fill out the form by clicking the button below. It will take you to the Contact Page where the form is on the left. For subject, select Catering.</text></br></br>
+          <a href="../pages/contact.html#form"><button class="button"> Catering Form </button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

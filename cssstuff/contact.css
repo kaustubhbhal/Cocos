@@ -1,0 +1,722 @@
+/*body{*/
+/*    margin: 0;*/
+/*    background-image:url("../images/honeycomb.png");*/
+/*}*/
+
+/*.navbar {*/
+/*    z-index: 5;*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*    margin-top:2vh;*/
+/*    overflow: hidden;*/
+/*    width: 100%;*/
+/*    height:28vh;*/
+/*}*/
+
+/*.logo{*/
+/*    height:20vh;*/
+/*}*/
+
+/*.link-container{*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.navbar a {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    color: #020403;*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*    padding: 1.5vh 1.5vw;*/
+/*    text-decoration: none;*/
+/*    font-size: 3.2vh;*/
+/*}*/
+
+/*.navbar a.active {*/
+/*    background-color: lightskyblue;*/
+/*    color: white;*/
+/*}*/
+
+/*.main-image{*/
+/*    width:100%;*/
+/*    vertical-align: bottom;*/
+/*    display: block;*/
+/*}*/
+
+/*!* The dropdown container *!*/
+/*.dropdown {*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*!* Dropdown button *!*/
+/*.dropdown .dropbtn {*/
+/*    font-size: 3.2vh;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    color: black;*/
+/*    padding: 14px 16px;*/
+/*    background-color: inherit;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    margin: 0; !* Important for vertical align on mobile phones *!*/
+/*}*/
+
+/*.navbar a:hover, .dropdown:hover .dropbtn {*/
+/*    background-color: #020403;*/
+/*    color:white;*/
+/*}*/
+
+/*!* Dropdown content (hidden by default) *!*/
+/*.dropdown-content {*/
+/*    display: none;*/
+/*    position:absolute;*/
+/*    background-color: #f9f9f9;*/
+/*    min-width: 160px;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*    z-index: 1;*/
+/*}*/
+
+/*!* Links inside the dropdown *!*/
+/*.dropdown-content a {*/
+/*    font-size: 2.7vh;*/
+/*    float: none;*/
+/*    color: black;*/
+/*    padding: 12px 16px;*/
+/*    text-decoration: none;*/
+/*    display: block;*/
+/*    text-align: left;*/
+/*}*/
+
+/*!* Add a grey background color to dropdown links on hover *!*/
+/*.dropdown-content a:hover {*/
+/*    background-color: #020403;*/
+/*    color:white;*/
+/*}*/
+
+/*!* Show the dropdown menu on hover *!*/
+/*.dropdown:hover .dropdown-content {*/
+/*    display:block;*/
+/*}*/
+
+/*.navimage{*/
+/*    height:100%;*/
+/*}*/
+
+body{
+    margin: 0;
+    padding:0;
+    background-image:url("../images/honeycomb.png");
+}
+
+.navbar{
+    position: absolute;
+    top:0;
+    margin-top:2vh;
+    overflow: hidden;
+    width: 100%;
+    height:28vw;
+    z-index: 2;
+}
+
+.logo{
+    height:11vw;
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-container a:not(.logo-link) {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    padding: 1.5vh 1.5vw;
+    text-decoration: none;
+    font-size: 1.75vw;
+}
+
+.icon{
+    display:none;
+    position:absolute;
+    height:5vh;
+    width:5vh;
+    left:2vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size:3.7vh;
+    text-align: center;
+}
+
+.link-container a:hover:not(.logo-link) {
+    background-color: white;
+    color: black;
+}
+
+.link-container a.active {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.main-image{
+    width:100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    display: block;
+    opacity: 0.7;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 1.75vw;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.5vw 1.5vw;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.link-container a:hover:not(.logo-link), .dropdown:hover .dropbtn {
+    background-color: white;
+    color:black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f9f9f9;
+    width:13vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 1.6vw!important;
+    float: none!important;
+    color: black!important;
+    padding: 1vw 1.1vw!important;
+    text-decoration: none!important;
+    display: block!important;
+    text-align: left!important;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd!important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.navimage{
+    height:100%;
+}
+
+.menu-overlay {
+    position: relative;
+    text-align: center;
+}
+
+.menu-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:60%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:5vh;
+}
+
+.navbar-2 {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 4;
+    height:10.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Links inside the navbar */
+.navbar-2 a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.2vh;
+}
+
+/* Change background on mouse-over */
+.navbar-2 a:hover {
+    background: white;
+    color: black;
+}
+
+.logo-2{
+    height:9vh;
+}
+
+.active-2 {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hide{
+    display:none;
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 35vw;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+    font-size: 2vh;
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.9);
+    padding: .75em 1rem;
+    margin-bottom: 2rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: gray;
+    outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+    width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    width: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+    outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    margin-bottom: 0;
+    font-size:2vh;
+}
+
+#fs-frm select {
+    text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+    margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+    display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+    width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+    width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+    margin-right: 3%;
+}
+#form{
+    padding: 5vh;
+    margin-left:2vw;
+    margin-top:2vw;
+    width:40vw;
+    background-color:white;
+}
+
+.social-container{
+    text-align:center;
+    background-color:white;
+    flex:1;
+    width:40vw;
+    padding: 5vh;
+    margin-left:2vw;
+    margin-top:2vw;
+    margin-right:2vw;
+}
+
+.contact-flex{
+    display:flex;
+    margin-bottom: 2vw;
+}
+
+.social-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vh;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+}
+
+/*.row {*/
+/*    display: flex;*/
+/*    margin-right:2.7vw;*/
+/*    !*flex-wrap: wrap;*!*/
+/*    padding: 0 2vw;*/
+/*    justify-content: center;*/
+/*    margin-top:6vh;*/
+/*}*/
+
+/*!* Create four equal columns that sits next to each other *!*/
+/*.column {*/
+/*    flex: 30%;*/
+/*    max-width: 30%;*/
+/*    padding: 0 4px;*/
+/*}*/
+
+/*.margin{*/
+/*}*/
+
+/*.image-text {*/
+/*    margin:4vh;*/
+/*    vertical-align: middle;*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* Style all font awesome icons *!*/
+/*.fa{*/
+/*    padding: 6vh;*/
+/*    font-size: 4.5vh !important;*/
+/*    width: 2.3vw;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.iconify{*/
+/*    padding: 6vh;*/
+/*    font-size: 4.5vh !important;*/
+/*    width: 2.3vw;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    border-radius: 50%;*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+
+/*.fa:hover {*/
+/*    opacity: 0.7;*/
+/*}*/
+
+/*.iconify:hover {*/
+/*    opacity: 0.7;*/
+/*}*/
+
+/*.fa-instagram {*/
+/*    background: #F56040;*/
+/*    color: white;*/
+/*}*/
+
+/*.fa-facebook {*/
+/*    background: #3B5998;*/
+/*    color: white;*/
+/*}*/
+
+/*.fa-twitter {*/
+/*    background: #55ACEE;*/
+/*    color: white;*/
+/*}*/
+
+
+.row {
+    display: flex;
+    margin-top:10vh;
+    /*flex-wrap: wrap;*/
+    padding: 0 2vw;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    padding: 0 4px;
+}
+
+.margin{
+}
+
+.image-text {
+    vertical-align: middle;
+    margin:2vh;
+    margin-bottom:3vh;
+}
+
+/* Style all font awesome icons */
+.fa:not(.special){
+    padding: 5vh;
+    font-size: 3vw;
+    width: 3vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    height:3vw;
+}
+
+.iconify{
+    padding: 5vh;
+    font-size: 3vw;
+    width: 3vw;
+    height:3vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+.fa:hover:not(.special) {
+    opacity: 0.7;
+}
+
+.iconify:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #F56040;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.phone{
+    color:lightskyblue;
+}
+
+.title{
+    position:absolute;
+    color:white;
+    font-size: 10vh;
+    top: 22vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+    font-family: 'Titillium Web', sans-serif;
+    z-index: 1;
+}
+
+.black-back{
+    background-color: black;
+}
+
+.overlay-wrapper {
+    display:none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+}
+
+.overlay-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    opacity: 0.95;
+    z-index:2;
+}
+
+.mobile{
+    display:none;
+}
+.mobile-2{
+    display: none;
+}
+
+.mobile-3{
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .link-container a, .dropdown, .dropbtn {display: none;}
+    .navimage a.icon {
+        display: block;
+        z-index:3;
+    }
+    .logo{height: 16vw;}
+    .navbar-2{display:none;}
+    .mobile{
+        display:block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index:3;
+    }
+    .desktop{display:none;}
+    .desktop-2{display: none;}
+    .desktop-3{display: none;}
+    .mobile-2{display: block;}
+    .mobile-3{display: block;}
+    .navbar{margin-top:2vh; overflow: visible;}
+    .show{display:block;}
+    .title{font-size: 8vh;top:22vh;}
+    .main-image{height:50vh;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .fixed{
+        position: fixed;
+        margin-top:17vh;
+        width:100vw;
+        z-index: 3;
+    }
+
+    .fixed-2{
+        position:fixed;
+        background-color:black;
+    }
+
+    .link-container.responsive {
+        position: relative;
+        display:block;
+        margin-top:5vh;
+        z-index:3;
+    }
+
+    .link-container.responsive a {
+        font-size:24px;
+        float: none;
+        display: block;
+        text-align: center;
+        z-index:3;
+        margin-right:20%;
+        margin-left:20%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar-2{display: none;}
+}
+
+@media screen and (max-width:450px){
+    .title{
+        font-size: 6vh;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .fa:not(.special) {
+        width:auto;
+        height:auto;
+        font-size:4.5vw;
+    }
+
+    .fa-facebook{
+        width:4vw !important;
+        height:auto !important;
+        font-size:4.5vw !important;
+    }
+
+    .iconify {
+        width:auto;
+        height:auto;
+        font-size:4.5vw;
+    }
+
+    .contact-flex{display: block; overflow: hidden;}
+
+    #form, .social-container{
+        width:auto;
+        margin-right:2vw;
+    }
+
+    #form{padding:3vh;}
+
+    #fs-frm input, #fs-frm select, #fs-frm textarea, #fs-frm fieldset, #fs-frm optgroup, #fs-frm label, #fs-frm #card-element:disabled{
+        width:65vw;
+    }
+
+}

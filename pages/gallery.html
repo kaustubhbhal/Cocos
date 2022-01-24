@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabby's Sweet Treats | Gallery</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png"/>
+        <link href="../stylesheets/gallery.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+        <script src="../scripts/gallery.js"></script>
+    </head>
+    <body>
+        <div class="navimage">
+            <div class="navbar">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars special" style=" vertical-align: middle;" aria-hidden="true"></i></a>
+                <a href="../index.html"><img class="logo mobile" src="../images/logo.png"></a>
+                <div class="fixed">
+                    <div class="link-container" id="link-container">
+                        <a href="../index.html">Home</a>
+                        <a href="../pages/menu.html">Menu</a>
+                        <a href="../pages/catering.html">Catering</a>
+                        <a class="logo-link" href="../index.html"><img class="logo desktop" src="../images/logo.png"></a>
+                        <a class="active" href="../pages/gallery.html">Gallery</a>
+                        <div class="dropdown desktop-3">
+                            <button class="dropbtn">About
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2vw" height="1.2vw" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a onclick="scroll_about()">Who We Are</a>
+                                <a href="../pages/schedule.html">Schedule</a>
+                            </div>
+                        </div>
+                        <a class="mobile-3 on-click" href="../index.html#home-about">Who We Are</a>
+                        <a class="mobile-3" href="../pages/schedule.html">Schedule</a>
+                        <a href="../pages/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="black-back">
+                <text class="title" id="catering">Gallery</text>
+                <img class="main-image" src="../images/gallery.jpg">
+            </div>
+
+            <div class="overlay-wrapper-2" id="overlay-wrapper">
+                <div class="overlay-bg-2"></div>
+            </div>
+        </div>
+<!--        <div class="navimage">-->
+<!--            <div class="navbar">-->
+<!--                <div class="link-container">-->
+<!--                    <a href="../index.html">Home</a>-->
+<!--                    <a href="../pages/menu.html">Menu</a>-->
+<!--                    <a href="../pages/catering.html">Catering</a>-->
+<!--                    <img class="logo" src="../images/logo.png">-->
+<!--                    <a class="active" href="">Gallery</a>-->
+<!--                    <div class="dropdown">-->
+<!--                        <button class="dropbtn">About-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="1.2vw" height="1.2vw" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">-->
+<!--                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>-->
+<!--                            </svg>-->
+<!--                        </button>-->
+<!--                        <div class="dropdown-content">-->
+<!--                            <a href="../index.html#home-about">Who We Are</a>-->
+<!--                            <a href="../pages/schedule.html">Schedule</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <a href="../pages/contact.html">Contact</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="menu-overlay">-->
+<!--                <img class="main-image" src="../images/gallery.jpg">-->
+<!--                <div class="menu-text">-->
+<!--                    <h1 class="overlay-title">Gallery</h1>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="navbar-2 hide">-->
+<!--            <img class="logo-2" src="../images/logo.png">-->
+<!--            <a href="../index.html">Home</a>-->
+<!--            <a href="../pages/menu.html">Menu</a>-->
+<!--            <a href="../pages/catering.html">Catering</a>-->
+<!--            <a class="active-2" href="">Gallery</a>-->
+<!--            <a href="../index.html#home-about">Who We Are</a>-->
+<!--            <a href="../pages/schedule.html">Schedule</a>-->
+<!--            <a href="../pages/contact.html">Contact</a>-->
+<!--        </div>-->
+
+<!--        <div class="gallery-container">-->
+<!--            <div class="gallery-main">-->
+<!--                <div class="gallery-1 gallery">-->
+<!--                    <img class="gallery-img event-1-img" src="https://lh3.googleusercontent.com/BVFKbo6BnZXZIfxVaxnMCVcnX8RVLM31r-SzP9XA2Xxe0O1ce0yoyrTZYWxSSTuQgRNqS2JshQYHThUuWv1GMNrYb7tck3W9tcyk4ja1f9rb1Uf-4WdMIayQnfEpdlmPkF6uQo3L=w1920-h1080">-->
+<!--                </div>-->
+
+<!--                <div class="gallery-2 gallery">-->
+<!--                    <img class="gallery-img event-2-img"src="https://lh3.googleusercontent.com/34P5fbMuD6ii9Hl1id-SjnMpQxFWWisGKxDDvP0d0-gQ9B82PCLw1_tn88MRsYVKUOIhDEMBOnm8jV6Rug6ZADRwVaQdw-pO3wZ4V3CQ6H9duePucKOwnl7xXyRMbfgGKkeFai7y=w1920-h1080">-->
+<!--                </div>-->
+
+<!--                <div class="gallery-3 gallery">-->
+<!--                    <img class="gallery-img event-3-img" src="https://lh3.googleusercontent.com/Myl1CZi7nbqfu2roy8lhhKEWay_6H-P45_12qGHlniPT3pi91VzToJJeUkXYSbyQMma85Wcrt5y_XUWPKhMbItm6qg7T3LKtJTupVZhOi7zHhPxuyGP0ref-H_1Ie_iYT-9ARNmu=w1920-h1080">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="row">
+            <div class="column">
+                <img class="event-1-img" src="https://lh3.googleusercontent.com/BVFKbo6BnZXZIfxVaxnMCVcnX8RVLM31r-SzP9XA2Xxe0O1ce0yoyrTZYWxSSTuQgRNqS2JshQYHThUuWv1GMNrYb7tck3W9tcyk4ja1f9rb1Uf-4WdMIayQnfEpdlmPkF6uQo3L=w1920-h1080">
+                <img class="event-2-img" src="https://lh3.googleusercontent.com/34P5fbMuD6ii9Hl1id-SjnMpQxFWWisGKxDDvP0d0-gQ9B82PCLw1_tn88MRsYVKUOIhDEMBOnm8jV6Rug6ZADRwVaQdw-pO3wZ4V3CQ6H9duePucKOwnl7xXyRMbfgGKkeFai7y=w1920-h1080">
+                <img class="event-3-img" src="https://lh3.googleusercontent.com/Myl1CZi7nbqfu2roy8lhhKEWay_6H-P45_12qGHlniPT3pi91VzToJJeUkXYSbyQMma85Wcrt5y_XUWPKhMbItm6qg7T3LKtJTupVZhOi7zHhPxuyGP0ref-H_1Ie_iYT-9ARNmu=w1920-h1080">
+            </div>
+            <div class="column">
+                <img class="event-2-img" src="https://lh3.googleusercontent.com/34P5fbMuD6ii9Hl1id-SjnMpQxFWWisGKxDDvP0d0-gQ9B82PCLw1_tn88MRsYVKUOIhDEMBOnm8jV6Rug6ZADRwVaQdw-pO3wZ4V3CQ6H9duePucKOwnl7xXyRMbfgGKkeFai7y=w1920-h1080">
+                <img class="event-3-img" src="https://lh3.googleusercontent.com/Myl1CZi7nbqfu2roy8lhhKEWay_6H-P45_12qGHlniPT3pi91VzToJJeUkXYSbyQMma85Wcrt5y_XUWPKhMbItm6qg7T3LKtJTupVZhOi7zHhPxuyGP0ref-H_1Ie_iYT-9ARNmu=w1920-h1080">
+                <img class="event-1-img" src="https://lh3.googleusercontent.com/BVFKbo6BnZXZIfxVaxnMCVcnX8RVLM31r-SzP9XA2Xxe0O1ce0yoyrTZYWxSSTuQgRNqS2JshQYHThUuWv1GMNrYb7tck3W9tcyk4ja1f9rb1Uf-4WdMIayQnfEpdlmPkF6uQo3L=w1920-h1080">
+            </div>
+            <div class="column">
+                <img class="event-3-img" src="https://lh3.googleusercontent.com/Myl1CZi7nbqfu2roy8lhhKEWay_6H-P45_12qGHlniPT3pi91VzToJJeUkXYSbyQMma85Wcrt5y_XUWPKhMbItm6qg7T3LKtJTupVZhOi7zHhPxuyGP0ref-H_1Ie_iYT-9ARNmu=w1920-h1080">
+                <img class="event-1-img" src="https://lh3.googleusercontent.com/BVFKbo6BnZXZIfxVaxnMCVcnX8RVLM31r-SzP9XA2Xxe0O1ce0yoyrTZYWxSSTuQgRNqS2JshQYHThUuWv1GMNrYb7tck3W9tcyk4ja1f9rb1Uf-4WdMIayQnfEpdlmPkF6uQo3L=w1920-h1080">
+                <img class="event-2-img" src="https://lh3.googleusercontent.com/34P5fbMuD6ii9Hl1id-SjnMpQxFWWisGKxDDvP0d0-gQ9B82PCLw1_tn88MRsYVKUOIhDEMBOnm8jV6Rug6ZADRwVaQdw-pO3wZ4V3CQ6H9duePucKOwnl7xXyRMbfgGKkeFai7y=w1920-h1080">
+            </div>
+            <div class="column">
+                <img class="event-1-img" src="https://lh3.googleusercontent.com/BVFKbo6BnZXZIfxVaxnMCVcnX8RVLM31r-SzP9XA2Xxe0O1ce0yoyrTZYWxSSTuQgRNqS2JshQYHThUuWv1GMNrYb7tck3W9tcyk4ja1f9rb1Uf-4WdMIayQnfEpdlmPkF6uQo3L=w1920-h1080">
+                <img class="event-2-img" src="https://lh3.googleusercontent.com/34P5fbMuD6ii9Hl1id-SjnMpQxFWWisGKxDDvP0d0-gQ9B82PCLw1_tn88MRsYVKUOIhDEMBOnm8jV6Rug6ZADRwVaQdw-pO3wZ4V3CQ6H9duePucKOwnl7xXyRMbfgGKkeFai7y=w1920-h1080">
+                <img class="event-3-img" src="https://lh3.googleusercontent.com/Myl1CZi7nbqfu2roy8lhhKEWay_6H-P45_12qGHlniPT3pi91VzToJJeUkXYSbyQMma85Wcrt5y_XUWPKhMbItm6qg7T3LKtJTupVZhOi7zHhPxuyGP0ref-H_1Ie_iYT-9ARNmu=w1920-h1080">
+            </div>
+
+        </div>
+
+        <div class="overlay-wrapper">
+            <div class="embed-container"></div>
+            <div class="overlay-bg"></div>
+            <img class="close" src="../images/close_black.png">
+        </div>
+    </body>
+</html>

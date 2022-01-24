@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabby's Sweet Treats</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="navimage">
+            <div class="navbar">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style=" vertical-align: middle;" aria-hidden="true"></i></a>
+                <a href="index.html"><img class="logo mobile" src="images/logo.png"></a>
+                <div class="fixed">
+                    <div class="link-container" id="link-container">
+                        <a class="active" href="">Home</a>
+                        <a href="pages/menu.html">Menu</a>
+                        <a href="pages/catering.html">Catering</a>
+                        <a class="logo-link" href="index.html"><img class="logo desktop" src="images/logo.png"></a>
+                        <a href="pages/gallery.html">Gallery</a>
+                        <div class="dropdown desktop-3">
+                            <button class="dropbtn">About
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2vw" height="1.2vw" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a onclick="scroll_about()">Who We Are</a>
+                                <a href="pages/schedule.html">Schedule</a>
+                            </div>
+                        </div>
+                        <a class="mobile-3 on-click" href="index.html#home-about">Who We Are</a>
+                        <a class="mobile-3" href="pages/schedule.html">Schedule</a>
+                        <a href="pages/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <img class="main-image" src="images/coverpage_1.PNG">
+            <!--src="images/foodtruck-2.jpg" -->
+
+            <div class="overlay-wrapper" id="overlay-wrapper">
+                <div class="overlay-bg"></div>
+            </div>
+        </div>
+
+        <div class="navbar-2 hide">
+            <img class="logo-2" src="images/logo.png">
+            <a class="active-2" href="">Home</a>
+            <a href="pages/menu.html">Menu</a>
+            <a href="pages/catering.html">Catering</a>
+            <a href="pages/gallery.html">Gallery</a>
+            <a href="#who">Who We Are</a>
+            <a href="pages/schedule.html">Schedule</a>
+            <a href="pages/contact.html">Contact</a>
+        </div>
+
+        <div class="home-menu">
+            <img class="h-menu-img desktop-2" src="images/home_menu.jpg">
+            <div class="h-menu-text">
+                <text>Our Treats</text>
+                </br> </br>
+                <p>The Sweet Life Truck has some of your favorite <a class="extra-link" href="pages/menu.html">treats</a> to satisfy your sweet tooth. Prepare your tastebuds to savor items including ice cream cones, italian ice, and custom treats original to Gabby's. We have something for everyone!
+                Want something you’ve never tried before? Grab a Cereal bowl.
+                Want something Sweet and Light? Grab a slice of Cheesecake or Apple Pie.
+                Want a Sweet Drink? Grab a Snapple or a Starbucks Frappuccino Coffee Drink.</p>
+            </div>
+            <img class="h-menu-img mobile-2" src="images/home_menu.jpg">
+        </div>
+
+        <div class="home-catering">
+            <div class="h-catering-text">
+                <text>We'll Be There</text>
+                </br> </br>
+                <p>Gabby’s Sweet Treats makes a conscious effort to support children of all ages who participate in extracurricular activities. Invite the Sweet Life Truck to your non-profit events, and Gabby’s Sweet Treats will donate 20% of the proceeds to your organization. We are vested in the community and are serious about doing our part to support those who support us! <a class="extra-link" href="pages/catering.html">Contact us</a> about fundraisers, school fairs, camps, sporting events, and other community events.</p>
+            </div>
+                <img class="h-catering-img" src="images/home_catering.jpg">
+        </div>
+
+        <div id="home-about">
+            <img src="images/home_about.jpg" style="width:100%;">
+            <div class="h-about-text">
+                <text>About</text>
+                </br>
+                <p>Founded in 2019, Gabby's Sweet Treats is the brainchild of a father-daughter team, Ollie and Gabby. As a passionate athlete, Gabby is often at sporting events as a participant and spectator. She began to notice that there weren't any snacks and refreshments available. This was disappointing to Gabby- she believes that having a treat at a track meet or football game on a hot summer day makes the experience that much better. Gabby knew that there was a need for it, and Gabby's Sweet Treats was created!</p>
+
+                <p>We pride ourselves on enhancing sporting events with the presence of amazing dessert. “The SweetLifeTruck” visits are also the perfect addition for parties, fairs, and PTA sponsored events.</p>
+
+                <p>Ollie and Gabby are dedicated to bringing the fun and innovation to creative desserts to reach children and families in the DMV area. Let The SweetLifeTruck provide a special visit to your next event. We have a flavor that you will like so if you see us ask for a free sample!</p>
+            </div>
+        </div>
+    </body>
+</html>
