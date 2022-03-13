@@ -59,7 +59,7 @@ body{
 .main-image{
     width:100%;
     object-fit: cover;
-    vertical-align: bottom;
+    /*vertical-align: bottom;*/
     display: block;
     position:relative;
     z-index:-1;
